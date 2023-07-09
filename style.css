@@ -1,0 +1,122 @@
+body {
+    background-color: #4c5eaf;
+}
+
+select {
+    width           : 250px;
+    background-color: rgb(113, 105, 221);
+    color           : rgb(255, 255, 255);
+    font-size       : 18px;
+    border-radius   : 20px;
+    border          : 2px solid black;
+}
+
+select:hover {
+    background-color: lightblue;
+}
+
+select:focus {
+    border-color: blue;
+}
+
+
+.container {
+    max-width  : 400px;
+    margin     : 150px auto;
+    padding    : 20px;
+    line-height: 50px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size  : 24px;
+    font-weight: bold;
+    color      : #333;
+}
+
+label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display    : block;
+    font-size  : 16px;
+    line-height: 1.5;
+    color      : #666;
+}
+
+input {
+    width        : 200px;
+    padding      : 10px;
+    border       : 2px solid #ccc;
+    border-radius: 20px;
+    transition   : border-color 0.3s ease;
+}
+
+input:focus {
+    outline     : none;
+    border-color: #4c6baf;
+    box-shadow  : 0 0 5px rgba(76, 99, 175, 0.6);
+}
+
+option {
+    color           : red;
+    background-color: lightgray;
+    font-size       : 16px;
+    padding         : 5px;
+}
+
+button {
+    width           : 100%;
+    padding         : 10px;
+    background-color: #4c5eaf;
+    color           : white;
+    border-radius   : 20px;
+    border          : none;
+    cursor          : pointer;
+    transition      : background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00806f;
+    animation       : shake 0.5s;
+}
+
+.card {
+    width           : 500px;
+    height          : 400px;
+    background-color: #f1f1f1;
+    border-radius   : 5px;
+    transition      : background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #ddd;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#result {
+    color      : #00806f;
+    border     : 1px solid black;
+    border-top : transparent;
+    font-weight: bold;
+    text-align : center;
+}
